@@ -3,10 +3,11 @@
 #include <ipst.h>
 
 // define pins
-const int SPEAKER = 16;
-const int MUTESWITCH = 18;
-const int SW1 = 22;
-const int LED = 19;
+const int SPEAKER = 16;      // pin 16 - piezzo speaker
+const int MUTESWITCH = 18;   // pin 18 - muting switch
+const int SW1 = 22;          // pin SW1 - on board SW1 
+const int LED = 19;          // pin 19 - LED
+                             // pin 17 - LED8
 int tempFreq;
 boolean speakerStatus = false;
 
@@ -28,7 +29,7 @@ void setup()
   setTextColor(GLCD_WHITE);
   glcdMode(0);
   
-  pinLED8(17);
+  pinLED8(17);  // LED8 panel is connected to pin 17
   
   showSCiUSlogo();
   

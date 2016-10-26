@@ -1,4 +1,5 @@
 // ipst microbox se
+// SCiUS-demo.ino : fully function for demo in the first session
 #include <ipst.h>
 
 // define pins
